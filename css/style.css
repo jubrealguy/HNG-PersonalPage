@@ -8,33 +8,112 @@ html {
     font-size: 62.5%;
 }
 
+@media screen and (max-width: 450px) {
+    html {
+        font-size: 50%;
+    }
+}
+
+body {
+    padding: 2.5rem 0;
+}
+
 .page-box{
-    background-color: gray;
+    background-color: rgba(0, 0, 0, 0.26);
     text-align: center;
     width: 50rem;
+    display: flex;
+    flex-direction: column;
+    padding: 3rem 6rem;
+    margin: auto auto;
+    border-radius: 2rem;
+    box-shadow: 1rem 2rem 1rem rgba(0, 0, 0, 0.96);
+}
+
+@media screen and (max-width: 450px) {
+    .page-box {
+        width: 95vw
+    }
 }
 
 h1{
-    font-size: 8rem;
+    font-size: 6.5rem;
+    margin-bottom: 2rem;
 }
 
-.time-box {
-    display: flex;
-}
-
-.time {
-    background-color: brown;
-}
-
-.time svg {
-    height: 3rem;
+.img-box {
+    margin-bottom: 3rem;
 }
 
 .img {
     height: 30rem;
     border-radius: 50%;
+    transition: all .3s;
+}
+
+.img:hover {
+    outline: .7rem solid tomato;
+    outline-offset: 1rem;
+}
+
+.daytime {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 3rem;
+}
+
+.day {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: tomato;
+    padding: 1rem;
+    border-radius: 1.2rem;
+}
+
+.day svg {
+    height: 2rem;
+    margin-right: .5rem;
+}
+
+.day span {
+    font-size: 2.5rem;
+}
+
+.time {
+    background-color: tomato;
+    display: flex;
+    padding: 1rem;
+    border-radius: 1.2rem;
+    flex-direction: column;
+}
+
+.time span:nth-child(2) {
+    font-size: 2rem;
+    color: lightblue;
 }
 
 .myTrack {
     font-size: 3rem;
+    margin-bottom: 2rem;
+}
+
+.foot {
+    font-size: 1.6rem;
+}
+
+.foot a {
+    color: tomato;
+    transition: all .5s;
+}
+
+.foot a:hover {
+    color: rgba(255, 99, 71, 0.59);
+}
+
+@media screen and (max-width: 450px) {
+    .time span:nth-child(2) {
+        font-size: 1.4rem;
+        color: lightblue;
+    }
 }
