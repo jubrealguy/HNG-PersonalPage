@@ -1,0 +1,40 @@
+*, *::after, *::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+.page-box{
+    background-color: gray;
+    text-align: center;
+    width: 50rem;
+}
+
+h1{
+    font-size: 8rem;
+}
+
+.time-box {
+    display: flex;
+}
+
+.time {
+    background-color: brown;
+}
+
+.time svg {
+    height: 3rem;
+}
+
+.img {
+    height: 30rem;
+    border-radius: 50%;
+}
+
+.myTrack {
+    font-size: 3rem;
+}
